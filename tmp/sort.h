@@ -25,8 +25,11 @@ void simple_swap(int *first, int *second);
 int partition(int a[], int l, int h, size_t s);
 void q_sort(int a[], int l, int h, size_t s);
 void d_l_list_swap_n(listint_t *a, listint_t *b, listint_t **list);
+void m_sort(int *a, int l, int m, int r, int *tmp);
+void m_d_g(int *a, int l, int r, int *tmp)
 
 void bubble_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
+void merge_sort(int *array, size_t size);
 #endif
