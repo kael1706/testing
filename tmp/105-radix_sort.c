@@ -5,7 +5,7 @@
  * to know number of digits
  * @a: array
  * @s: array size
- * 
+ *
  * Return: int
  */
 int find_biggest(int *a, size_t s)

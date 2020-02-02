@@ -7,6 +7,7 @@
  * @m: middle index
  * @r: right cornrer index
  * @tmp: temporary array
+ *
  * Return: void
  */
 void m_sort(int *a, int l, int m, int r, int *tmp)
@@ -51,6 +52,7 @@ void m_sort(int *a, int l, int m, int r, int *tmp)
  * @l: left most index of the array
  * @r: right most index of the array
  * @tmp: temporary array
+ *
  * Return: void
  */
 void m_d_g(int *a, int l, int r, int *tmp)
@@ -70,6 +72,7 @@ void m_d_g(int *a, int l, int r, int *tmp)
  * merge_sort - divide, sort and merge
  * @array: int array
  * @size: array size
+ *
  * Return: void
  */
 void merge_sort(int *array, size_t size)
