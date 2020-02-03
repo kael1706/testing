@@ -29,6 +29,8 @@ void m_sort(int *a, int l, int m, int r, int *tmp);
 void m_d_g(int *a, int l, int r, int *tmp);
 void r_sort(int *a, int s, int e);
 int find_biggest(int *a, size_t s);
+void q_sort_h(int *a, int l, int h, size_t s);
+int partition_h(int *a, int l, int h, size_t s);
 
 void bubble_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);

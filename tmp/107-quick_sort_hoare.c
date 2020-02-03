@@ -26,23 +26,22 @@ void simple_swap(int *first, int *second)
 int partition_h(int *a, int l, int h, size_t s)
 {
 	int pv = a[l];
-	int i = l - 1;
+	int k = l - 1;
 	int j = h + 1;
 
 	while (1)
 	{
 		do {
-			i++;
-		} while (a[i] < pv);
-
+			k++;
+		} while (a[k] < pv);
 		do {
 			j--;
 		} while (a[j] > pv);
-
-		if (i >= j)
+		if (k >= j)
 			return (j);
-		simple_swap(&a[i], &a[j]);
+		simple_swap(&a[k], &a[j]);
 		print_array(a, s);
+
 	}
 }
 
@@ -62,6 +61,7 @@ void q_sort_h(int *a, int l, int h, size_t s)
 	if (l < h)
 	{
 		int pv = partition_h(a, l, h, s);
+
 		q_sort_h(a, l, pv, s);
 		q_sort_h(a, pv + 1, h, s);
 	}
